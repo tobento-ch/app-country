@@ -1,0 +1,11 @@
+{
+    "CH": {
+        "code": "CH",
+        "code3": "CHE",
+        "numericCode": "756",
+        "currencyKey": "CHF",
+        "locale": "en",
+        "name": "Switzerland GB",
+        "continent": "Europe"
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "name": "tobento/app-country",
+    "type": "library",
+    "description": "App country support.",
+    "keywords": [
+        "tobento",
+        "package",
+        "app",
+        "country"
+    ],
+    "homepage": "https://www.tobento.ch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Strub",
+            "email": "info@tobento.ch",
+            "homepage": "https://www.tobento.ch"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0",
+        "tobento/app": "^1.0",
+        "tobento/app-migration": "^1.0",
+        "tobento/service-country": "^1.0",
+        "tobento/service-dir": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.0",
+        "tobento/service-filesystem": "^1.0.5",
+        "tobento/service-language": "^1.0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tobento\\App\\Country\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tobento\\App\\Country\\Test\\": "tests",
+            "App\\": "build/src"
+        }
+    },
+    "scripts": {
+        "test": "phpunit --testdox --colors=always",
+        "psalm": "vendor/bin/psalm"
+    }
+}
