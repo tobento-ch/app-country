@@ -28,7 +28,7 @@ composer require tobento/app-country
 
 ## Requirements
 
-- PHP 8.0 or greater
+- PHP 8.4 or greater
 
 # Documentation
 
@@ -49,7 +49,7 @@ The country boot does the following:
 use Tobento\App\AppFactory;
 
 // Create the app
-$app = (new AppFactory())->createApp();
+$app = new AppFactory()->createApp();
 
 // Add directories:
 $app->dirs()
@@ -77,7 +77,7 @@ use Tobento\Service\Country\CountriesFactoryInterface;
 use Tobento\Service\Country\CountryRepositoryInterface;
 
 // Create the app
-$app = (new AppFactory())->createApp();
+$app = new AppFactory()->createApp();
 
 // Add directories:
 $app->dirs()
@@ -110,7 +110,7 @@ use Tobento\App\AppFactory;
 use Tobento\Service\Country\CountryRepositoryInterface;
 
 // Create the app
-$app = (new AppFactory())->createApp();
+$app = new AppFactory()->createApp();
 
 // Add directories:
 $app->dirs()
@@ -143,7 +143,7 @@ use Tobento\App\AppFactory;
 use Tobento\Service\Country\CountryRepositoryInterface;
 
 // Create the app
-$app = (new AppFactory())->createApp();
+$app = new AppFactory()->createApp();
 
 // Add directories:
 $app->dirs()
